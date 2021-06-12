@@ -109,7 +109,7 @@ function init() {
 function makeBoxes() {
     let materialArray = [];
     // Change this to for loop
-    for(let i=1; i <=18; i++){
+    for(let i=1; i <=20; i++){
         materialArray.push(setBoxImages(i));
     }   
    
@@ -122,24 +122,24 @@ function makeBoxes() {
 
 
     const boxGeometry = new THREE.BoxGeometry(10, 10, 10);
-    boxes[0] = new Box(new THREE.Mesh(boxGeometry, materialArray[0]), "Playa De Las Americas", "Playa de las Americas, Tenerife", "https://www.tripadvisor.com/Attraction_Review-g562820-d13546304-Reviews-Playa_De_Las_Americas-Playa_de_las_Americas_Arona_Tenerife_Canary_Islands.html");
+    boxes[0] = new Box(new THREE.Mesh(boxGeometry, materialArray[0]), "Nissi Beach", "Ayia Napa, Cyprus", "https://nissi-beach.com/");
 
-    boxes[1] = new Box(new THREE.Mesh(boxGeometry, materialArray[1]), "Tantolunden Park", "Stockholm, Sweden", "https://www.expedia.com/Tantolunden-Park-Stockholm.d6161605.Vacation-Attraction?pwaLob=wizard-package-pwa");
+    boxes[1] = new Box(new THREE.Mesh(boxGeometry, materialArray[1]), "Los Christianos Beach", "Los Christianos, Tenerife", "https://www.spain-tenerife.com/en/places/cristianos.html");
     boxes[1].texture.position.x = 50;
 
-    boxes[2] = new Box(new THREE.Mesh(boxGeometry, materialArray[2]), "Kastellholmen", "Stockholm, Sweden", "https://www.tripadvisor.ca/ShowUserReviews-g189852-d246017-r303962223-Skeppsholmen-Stockholm.html");
+    boxes[2] = new Box(new THREE.Mesh(boxGeometry, materialArray[2]), "Larnaca Beach", "Larnaca, Cyprus", "https://chooseyourcyprus.com/discover-cyprus/beaches/larnaka-beaches.html");
     boxes[2].texture.position.x = 100;
 
-    boxes[3] = new Box(new THREE.Mesh(boxGeometry, materialArray[3]), "Bathing Lake", "Sorsele, Sweden", "https://www.swedishlapland.com/sorsele/");
+    boxes[3] = new Box(new THREE.Mesh(boxGeometry, materialArray[3]), "Perea Beach", "Thessaloniki, Greece", "https://www.greeka.com/macedonia/thessaloniki/beaches/perea-beach/");
     boxes[3].texture.position.x = 150;
 
-    boxes[4] = new Box(new THREE.Mesh(boxGeometry, materialArray[4]), "Niagara Falls", "Niagara Falls, Ontario, Canada", "https://www.niagarafallstourism.com/");
+    boxes[4] = new Box(new THREE.Mesh(boxGeometry, materialArray[4]), "Playa De Las Americas", "Playa de las Americas, Tenerife", "https://www.tripadvisor.com/Attraction_Review-g562820-d13546304-Reviews-Playa_De_Las_Americas-Playa_de_las_Americas_Arona_Tenerife_Canary_Islands.html");
     boxes[4].texture.position.x = 200;
 
     boxes[5] = new Box(new THREE.Mesh(boxGeometry, materialArray[5]), "Ryfjället", "Tärnaby, Sweden", "https://boka.hemavantarnaby.com/sv/se-gora/318730/ryjvejegaejsieryfj%C3%A4llet/detaljer");
     boxes[5].texture.position.x = 250;
 
-    boxes[6] = new Box(new THREE.Mesh(boxGeometry, materialArray[6]), "CN Tower", "Toronto, Ontario, Canada", "https://www.cntower.ca/intro.html");
+    boxes[6] = new Box(new THREE.Mesh(boxGeometry, materialArray[6]), "St. Peter's Basilica", "Rome, Italy", "https://www.rome.net/st-peters-basilica");
     boxes[6].texture.position.x = 300;
 
     boxes[7] = new Box(new THREE.Mesh(boxGeometry, materialArray[7]), "Yokohama Grand Hotel", "Yokohama, Japan", "https://www.tripadvisor.ca/Hotel_Review-g14134875-d299143-Reviews-INTERCONTINENTAL_YOKOHAMA_GRAND-Minatomirai_Nishi_Yokohama_Kanagawa_Prefecture_Kanto.html");
@@ -151,7 +151,7 @@ function makeBoxes() {
     boxes[9] = new Box(new THREE.Mesh(boxGeometry, materialArray[9]), "Fisherman's Bastion", "Budapest, Hungary", "http://www.fishermansbastion.com/");
     boxes[9].texture.position.x = 450;
 
-    boxes[10] = new Box(new THREE.Mesh(boxGeometry, materialArray[10]), "Perea Beach", "Thessaloniki, Greece", "https://www.greeka.com/macedonia/thessaloniki/beaches/perea-beach/");
+    boxes[10] = new Box(new THREE.Mesh(boxGeometry, materialArray[10]), "Tantolunden Park", "Stockholm, Sweden", "https://www.expedia.com/Tantolunden-Park-Stockholm.d6161605.Vacation-Attraction?pwaLob=wizard-package-pwa");
     boxes[10].texture.position.x = 500;
 
     boxes[11] = new Box(new THREE.Mesh(boxGeometry, materialArray[11]), "Lancellotti Chapel", "Rome, Italy", "https://www.rome.net/");
@@ -163,17 +163,24 @@ function makeBoxes() {
     boxes[13] = new Box(new THREE.Mesh(boxGeometry, materialArray[13]), "Saint Peter's Square", "Vatican City", "https://www.rome.net/st-peters-square");
     boxes[13].texture.position.x = 650;
 
-    boxes[14] = new Box(new THREE.Mesh(boxGeometry, materialArray[14]), "Nissi Beach", "Ayia Napa, Cyprus", "https://nissi-beach.com/");
+    boxes[14] = new Box(new THREE.Mesh(boxGeometry, materialArray[14]), "Niagara Falls", "Niagara Falls, Ontario, Canada", "https://www.niagarafallstourism.com/");
     boxes[14].texture.position.x = 700;
 
-    boxes[15] = new Box(new THREE.Mesh(boxGeometry, materialArray[15]), "Larnaca Beach", "Larnaca, Cyprus", "https://chooseyourcyprus.com/discover-cyprus/beaches/larnaka-beaches.html");
+    boxes[15] = new Box(new THREE.Mesh(boxGeometry, materialArray[15]), "Kastellholmen", "Stockholm, Sweden", "https://www.tripadvisor.ca/ShowUserReviews-g189852-d246017-r303962223-Skeppsholmen-Stockholm.html");
     boxes[15].texture.position.x = 750;
 
-    boxes[16] = new Box(new THREE.Mesh(boxGeometry, materialArray[16]), "St. Peter's Basilica", "Rome, Italy", "https://www.rome.net/st-peters-basilica");
+    boxes[16] = new Box(new THREE.Mesh(boxGeometry, materialArray[16]), "Bathing Lake", "Sorsele, Sweden", "https://www.swedishlapland.com/sorsele/");
     boxes[16].texture.position.x = 800;
 
     boxes[17] = new Box(new THREE.Mesh(boxGeometry, materialArray[17]), "Town Hall Square", "Tallinn, Estonia", "https://www.visitestonia.com/en/tallinn-town-hall-square");
     boxes[17].texture.position.x = 850;
+
+    boxes[18] = new Box(new THREE.Mesh(boxGeometry, materialArray[18]), "Forbidden City", "Beijing, China", "https://www.chinahighlights.com/beijing/forbidden-city/");
+    boxes[18].texture.position.x = 900;
+
+    boxes[19] = new Box(new THREE.Mesh(boxGeometry, materialArray[19]), "CN Tower", "Toronto, Ontario, Canada", "https://www.cntower.ca/intro.html");
+    boxes[19].texture.position.x = 950;
+
 
 }
 
